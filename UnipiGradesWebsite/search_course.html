@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	<title>UnipiGrades</title>
+	<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+
+   <link rel="stylesheet" type="text/css" href="css/main.css">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   
+</head>
+<body>
+	<br>
+	<ul class="menu">
+  <li><a href="main.html">Home</a></li>
+  <li><a href="search_user.html" >Search a user</a></li>
+  <li><a href="#"  class="active">Search a course </a></li>
+  <li><a href="#" onclick="mainApp.logOut()">Logout</a></li>
+  <li class="slider"></li>
+</ul>
+
+<h1 align="center">Search a Course!</h1>
+	<div class="search-bar">
+        <input type="text" name="search" id="search" autocomplete="off" id="myinput"  placeholder="Search">
+    </div>
+    <div>
+    <button    onclick="search()"  class="search_button">Search!</button>
+    </div>
+    <div class="mainDiv">
+<h1 align="center">Course Statistics</h1>
+    <table>
+			<thead align="center">
+				<tr>
+					<td><h2>Title</h2></td>
+					
+					<td ><h2>Description</h2></td>
+					
+					<td ><h2>Grade</h2></td>
+					
+					<td><h2> Semester</h2></td>
+		
+					<td><h2> Projects</h2></td>
+					
+					<td><h2> Ects Points</h2></td>
+
+					<td><h2> Average Grade for this course </h2></td>
+
+					<td><h2> User id </h2></td>
+
+					
+				</tr>
+			</thead>
+			<tbody id="table_body" align="center"></tbody>
+		</table>
+ 
+ <br>
+		
+		<table>
+			<thead align="center">
+				<tr>
+					<td><h2>Total Ects</h2></td>
+					
+					<td ><h2>Average Grade</h2></td>
+					
+					
+			
+				</tr>
+			</thead>
+			<tbody id="table_body2" align="center"></tbody>
+			<td id="td7"></td>
+			<td id="td8"></td>
+		</table>
+		<br>
+		<br>
+	</div>
+
+<script src="fireBase.js"></script>
+
+<script src="search_course.js"></script>
+
+</body>
+</html>
